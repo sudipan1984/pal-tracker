@@ -13,6 +13,7 @@ public class WelcomeController {
             @Value("${welcome.message}") String welcomeMessage
     ) {
         this.welcomeMessage = welcomeMessage;
+        System.out.println("This is for print in the log");
     }
 
     @GetMapping("/")
