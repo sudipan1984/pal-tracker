@@ -1,4 +1,4 @@
-package io.pivotal.pal.trackerapi;
+package io.pivotal.pal.tracker;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -54,7 +54,7 @@ public class TimeEntry {
         this.hours = hours;
     }
 
-    public TimeEntry(long projectId, long userId, LocalDate parse, int hours) {
+    public TimeEntry(long projectId, long userId, LocalDate date, int hours) {
         this.projectId = projectId;
         this.userId = userId;
         this.date = date;
